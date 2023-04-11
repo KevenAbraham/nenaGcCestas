@@ -9,7 +9,7 @@
 
 @font-face {
     font-family: monotype;
-    src: url(fonts/monotype-corsiva.ttf);
+    src: url(../fonts/monotype-corsiva.ttf);
 }
 
 body {
@@ -18,7 +18,7 @@ body {
 
 .home {
     position: relative;
-    background: url(image/home-bg.jpg);
+    background: url(../image/home-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 450px;
@@ -96,7 +96,7 @@ body {
 }
 
 .transforme {
-    background: url(image/Diferencial\ -\ Background.png);
+    background: url(../image/Diferencial\ -\ Background.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 600px;
@@ -157,7 +157,7 @@ body {
 }
 
 .produtos {
-    background: url(image/Marrom\ -\ Produtos.png);
+    background: url(../image/Marrom\ -\ Produtos.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 640px;
@@ -317,18 +317,18 @@ body {
 }
 
 .kim {
-    background: url(image/fotoKim.png);
+    background: url(../image/fotoKim.png);
     background-size: cover;
 }
 
 .eu {
-    background: url(image/fotoProfile.png);
+    background: url(../image/fotoProfile.png);
     background-size: cover;
 }
 
 .socialMedia {
     height: 642px;
-    background: url(image/background-bottom.png);
+    background: url(../image/background-bottom.png);
     background-size: cover;
     display: flex;
 }
