@@ -1,0 +1,525 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F2E6D0;
+}
+
+@font-face {
+    font-family: monotype;
+    src: url(fonts/monotype-corsiva.ttf);
+}
+
+header {
+    position: fixed;
+    height: 70px;
+    width: 100%;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+    transition: .5s;
+}
+
+header.sticky {
+    box-shadow: inset 0px -5px 10px -10px;
+    background: #fff;
+}
+
+
+header a {
+    text-decoration: none;
+    color: #000;
+    transition: .2s;
+}
+
+.logo {
+    font-family: monotype;
+    color: #000;
+    margin-left: 40px;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    font-size: 18px;
+    font-family: 'Inter';
+    user-select: none;
+    pointer-events: none;
+}
+
+header ul li {
+    margin-right: 40px;
+    position: relative;
+    pointer-events: all;
+}
+
+
+header ul:hover a:hover {
+    color: #000;
+}
+
+header a::before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 4px;
+    background: #73322C;
+    left: 50%;
+    bottom: -8px;
+    border-radius: 5px;
+}
+
+header li:hover a::before {
+    width: 100%;
+    left: 0;
+    transition: .2s all;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.home {
+    background: url(image/homeProdutos.png);
+    height: 650px;
+}
+
+.homeTitle {
+    font-size: 64px;
+    font-family: 'Montserrat';
+    text-align: center;
+    padding-top: 112px;
+    text-transform: uppercase;
+}
+
+.cestas {
+    height: 808px;
+    background: url(image/backgroundProdutosBaixopng.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.cestasTitle {
+    text-align: center;
+    padding-top: 32px;
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    font-size: 50px;
+}
+
+.titleBox {
+    text-align: center;
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    font-size: 62px;
+    color: #000;
+    padding-top: 32px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+}
+
+.box {
+    width: 345px;
+    height: 510px;
+    background-color: #fff;
+    border-radius: 20px;
+    transition: all .25s ease;
+}
+
+.box:nth-child(2) {
+    margin: 0 32px;
+}
+
+.imgBackground {
+    height: 273px;
+    width: 100%;
+    background: url();
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #000;
+    border-radius: 20px;
+}
+
+.cestasTitleBox {
+    text-align: center;
+    font-family: 'Inter';
+    color: #000;
+    font-size: 24px;
+}
+
+.cestasDesc {
+    font-family: 'Inter';
+    font-size: 16px;
+    color: #000;
+    text-align: center;
+}
+
+.canecas .price, .kitFesta .price {
+    margin-bottom: 18px;
+}
+
+.canecas span {
+    font-weight: bold;
+}
+
+.lista {
+    margin-top: 20px;
+}
+
+.lista ul {
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    font-family: 'Inter';
+    list-style: none;
+}
+
+.lista ul li {
+    margin: 0 10px;
+}
+
+.price {
+    font-family: 'Inter';
+    font-size: 16px;
+    text-align: center;
+    margin-top: 12px;
+    margin-bottom: 18px;
+}
+
+.box a {
+    display: flex;
+    text-decoration: none;
+}
+
+.box button {
+    width: 188px;
+    height: 38px;
+    margin: auto;
+    background-color: #fff;
+    border: 2px solid #73322C;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #73322C;
+    font-family: 'Inter';
+    font-size: 16px;
+    transition: all 0.25s ease;
+}
+
+.box button:hover {
+    border: none;
+    background-color: #73322C;
+    color: #fff;
+}
+
+.canecas {
+    height: 700px;
+}
+
+.kitFesta {
+    background: url(image/backgroundProdutosCima.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.kitFesta .titleBox {
+    padding-top: 69px;
+}
+
+.kitFesta .box {
+    margin-bottom: 88px;
+}
+
+footer {
+    background: #000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 130px;
+}
+
+.direitos {
+    color: #fff;
+    font-family: 'Inter';
+    font-size: 16px;
+}
+
+.footerSocial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50%;
+}
+
+.footerSocial img {
+    height: 50px;
+    margin-right: 20px;
+    transition: all .25s;
+}
+
+.footerSocial img:hover {
+    transform:translate(0, -10px);
+    box-shadow: 0px 17px 45px 0px rgba(0,0,0,.07);
+}
+
+.creditos {
+    color: #fff;
+    font-family: 'Inter';
+    font-size: 16px;
+}
+
+/* slide */  
+.card {
+    width: 300px;
+    min-width: 345px;
+    height: 510px;
+    background:#fff;
+    border-radius: 30px;
+    position:relative;
+    z-index:10;
+    margin:25px;
+    min-height:356px;
+    cursor:pointer;
+    transition: all .25s ease;
+    box-shadow: 0px 0px 0px 0px rgba(0,0,0, .08);
+}
+  
+.card:hover {
+    transform:translate(0, -10px);
+    box-shadow: 0px 17px 45px 0px rgba(0,0,0,.07);
+}
+
+.card h2 {
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Montserrat';
+}
+
+p {
+    text-align: center;
+    font-family: 'Inter';
+    margin: 10px 0;
+}
+
+.card ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    margin: 5px 0;
+}
+
+.card ul li {
+    margin: 0 5px;
+    font-family: 'Inter';
+    font-size: 14px;
+}
+
+.card button {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 188px;
+    height: 38px;
+    margin-top: 9px;
+    border: 2px solid #73322C;
+    border-radius: 10px;
+    background-color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all .25s ease;
+    color: #73322C;
+}
+
+.card button:hover {
+    border: none;
+    background-color: #73322C;
+    color: #fff;
+}
+.price {
+    margin: 10px 0 0 0;
+}
+
+.backgroundCard {
+    width: 100%;
+    height: 273px;
+    border-radius: 30px;
+    background-color: red;
+}
+  
+
+.card-content {
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
+    width:100%;
+    overflow:auto;
+    padding-top: 32px;
+    padding-left:60px;
+    padding-right: 50px;
+    scroll-behavior:smooth;
+}
+  
+  .card-content::-webkit-scrollbar {
+     height:0px;
+  }
+  
+  .card-content:after {
+    content:'';
+    display:block;
+    min-width:20px;
+    height:100px;
+    position:relative;
+  }
+  
+  .btn{
+    min-width:60px;
+    margin:auto 30px;
+    height:60px;
+    border-radius:20px;
+    background:#fff;
+    border:0px;
+    outline:none;
+    cursor:pointer;
+    z-index:9999;
+    box-shadow: 0px 0px 0px 0px rgba(0,0,0,.08);
+    transition: all .25s ease;
+  }
+  
+  .btn:hover{
+    box-shadow: 0px 17px 35px 0px rgba(0,0,0,.07);
+  }
+  
+  .btn i {
+    font-size:1.2rem;
+  }
+  
+  .slider {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:100%;
+    overflow:hidden;
+  }
+  
+  .slider:after {
+    content:'';
+    left:98px;
+    height:90vh;
+    position:absolute;
+    width:150px;
+    z-index:100;
+    pointer-events:none;
+  }
+  
+  .slider:before {
+    content:'';
+    right:98px;
+    height:90vh;
+    position:absolute;
+    width:150px;
+    z-index:100;
+    pointer-events:none;
+  }
+
+.cesta1 {
+    background: url(image/cestaLisboa.png);
+    background-size: cover;
+}
+
+.cesta2 {
+    background: url(image/cestaMadrid.png);
+    background-size: cover;
+}
+
+.cesta3 {
+    background: url(image/cestaNovaYork.png);
+    background-size: cover;
+}
+
+.cesta4 {
+    background: url(image/cestaPaulista.png);
+    background-size: cover;
+}
+
+.cesta5 {
+    background: url(image/cestaSuica.png);
+    background-size: cover;
+}
+
+.cesta6 {
+    background: url(image/cestaVeneza-I.png);
+    background-size: cover;
+}
+
+.cesta7 {
+    background: url(image/cestaParis.png);
+    background-size: cover;
+}
+
+.cesta8 {
+    background: url(image/cestaRoma.png);
+    background-size: cover;
+}
+
+.cesta9 {
+    background: url(image/cestaNovaYorkII.png);
+    background-size: cover;
+}
+
+.cesta10 {
+    background: url(image/cestaVeneza.png);
+    background-size: cover;
+}
+
+.cesta11 {
+    background: url(image/cestaKids.png);
+    background-size: cover;
+}
+
+.img1 {
+    background: url(image/canecaCaixa.png);
+    background-size: cover;
+}
+
+.img2 {
+    background: url(image/caneca4.png);
+    background-size: cover;
+}
+
+.img3 {
+    background: url(image/copos.png);
+    background-size: cover;
+}
+
+.img4 {
+    background: url(image/decoracao.png);
+    background-size: cover;
+}
+
+.img5 {
+    background: url(image/buque.png);
+    background-size: cover;
+}
+
+.img6 {
+    background: url(image/topper.png);
+    background-size: cover;
+}
+
+.box:hover {
+    transform:translate(0, -10px);
+    box-shadow: 0px 17px 35px 0px rgba(0,0,0,.07);
+}
+

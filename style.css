@@ -1,0 +1,424 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}   
+
+@font-face {
+    font-family: monotype;
+    src: url(fonts/monotype-corsiva.ttf);
+}
+
+body {
+    background-color: #F2E6D0;
+}
+
+.home {
+    position: relative;
+    background: url(image/home-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+}
+
+.titleHome {
+    display: flex;
+    margin-left: 825px;
+    padding-top: 108px;
+    font-size: 40px;
+    font-family: monotype;
+    color: #fff;
+}
+
+.descHome {
+    display: flex;
+    margin-left: 825px;
+    width: 431px;
+    margin-top: 38px;
+    font-size: 40px;
+    font-family: 'Montserrat';
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.undefinedSectionSlide {
+    height: 165px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.boxUndefined {
+    display: flex;
+    height: 100px;
+    width: 381px;
+    margin-top: 33px;
+}
+
+.boxImg {
+    margin: 23px 10px 0 10px;
+}
+
+.boxImg .imagemMoto {
+    height: 50px;
+    width: 70px;
+}
+
+.boxImg .imagemChat {
+    height: 60px;
+    width: 60px;
+}
+
+.boxImg .imagemJoinha {
+    height: 50px;
+    width: 65px;
+}
+
+.textBoxUndefined {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 20px;
+}
+
+.titleBoxUndefined {
+    font-size: 32px;
+    font-family: 'Montserrat';
+    color: #73322C;
+    width: 283px;
+}
+
+.descBoxUndefined {
+    font-size: 20px;
+    font-family: 'Inter';
+}
+
+.transforme {
+    background: url(image/Diferencial\ -\ Background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+}
+
+.transforme .textContent {
+    padding-top: 66px;
+    margin-left: 120px;
+    width: 465px;
+}
+
+.transforme .textContent h1 {
+    font-size: 40px;
+    font-family: 'Montserrat';
+    width: 465px;
+}
+
+.itens ul {
+    list-style: none;
+    margin: 60px 0;
+}
+
+.itens ul li {
+    display: flex;
+    margin-top: 20px;
+}
+
+.itens ul li img {
+    margin-right: 20px;
+}
+
+.textTransform {
+    font-size: 25px;
+    font-family: 'Inter';
+}
+
+.textContent a {
+    text-decoration: none;
+}
+
+.transformeBtn {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 188px;
+    height: 51px;
+    font-size: 24px;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 2px solid #73322C;
+    transition: .25s ease;
+    cursor: pointer;
+}
+
+.transformeBtn:hover {
+    background-color: #73322C;
+    color: #fff;
+}
+
+.produtos {
+    background: url(image/Marrom\ -\ Produtos.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 640px;
+}
+
+.titleProdutos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 66px;
+    font-size: 36px;
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+    color: #fff;
+}
+
+.boxContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 42px;
+}
+
+.card {
+    text-decoration: none;
+    color: #fff;
+    overflow: hidden;
+    flex-grow: 1;
+    display: grid;
+    place-items: center;
+    align-items: flex-start;
+    height: 368px;
+    aspect-ratio: 0.5;
+    transition: all 0.6s ease-in-out;
+    padding: 1rem;
+    cursor: pointer;
+    cursor: auto;
+}
+
+.card img {
+    border-radius: 1rem;
+    grid-column: 1;
+    grid-row: 1 / span 3;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: .25s ease;
+}
+
+.content {
+    grid-row: 2;
+    grid-column: 1;
+    opacity: 0;
+    width: 90%;
+    transform: translateY(100px);
+    grid-column: 1;
+    transition: all 0.5s ease-in-out;
+    transition-delay: 0.2s;
+}
+
+.card:hover {
+    flex-grow: 3;
+}
+
+.card:hover img {
+    filter: blur(5px);
+}
+
+.content h2 {
+    font-family: 'Montserrat';
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+.content p {
+    font-family: 'Inter';
+    font-size: 16px;
+}
+
+.content button {
+    padding: 5px 10px;
+    font-size: 14px;
+    font-family: 'Inter';
+    background-color: transparent;
+    border: 2px solid #73322C;
+    cursor: pointer;
+    color: #73322C;
+    border-radius: 10px;
+    margin-top: 10px;
+    transition: .25s ease;
+}
+
+.content button:hover {
+    color: #fff;
+    background-color: #73322C;
+}
+
+.card:hover .content {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.dizemSobre {
+    height: 600px;
+}
+
+.titleDizemSobre {
+    display: flex;
+    justify-content: center;
+    padding-top: 54px;
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    font-size: 36px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 32px;
+}
+
+.container .box {
+    background-color: transparent;
+    height: 250px;
+    width: 458px;
+    border-radius: 20px;
+    border: 3px solid #73322C;
+}
+
+.aspa {
+    display: flex;
+    margin: auto;
+    padding-top: 45px;
+    margin-bottom: 32px;
+}
+
+.textDizemSobre {
+    text-align: center;
+    font-size: 36px;
+    font-family: 'Inter';
+    font-weight: 100;
+}
+
+.profilePicture {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    margin: auto;
+}
+
+.nomePessoa {
+    text-align: center;
+    font-size: 36px;
+    font-family: 'Inter';
+}
+
+.kim {
+    background: url(image/fotoKim.png);
+    background-size: cover;
+}
+
+.eu {
+    background: url(image/fotoProfile.png);
+    background-size: cover;
+}
+
+.socialMedia {
+    height: 642px;
+    background: url(image/background-bottom.png);
+    background-size: cover;
+    display: flex;
+}
+
+.socialMedia .textContent {
+    padding-top: 156px;
+    margin-left: 14px;
+    font-family: 'Montserrat';
+    width: 505px;
+}
+
+.titleSocialMedia {
+    font-size: 48px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.link {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.descLink {
+    font-size: 36px;
+    color: #fff;
+    margin-left: 20px;
+}
+
+.whatsappClass {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.whatsappButton {
+    width: 266px;
+    height: 53px;
+    font-size: 24px;
+    font-family: 'Inter';
+    color: #fff;
+    background-color: transparent;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    margin-left: 20px;
+    transition: .25s ease;
+    cursor: pointer;
+}
+
+.whatsappButton:hover {
+    background-color: #fff;
+    color: #73322C;
+}
+
+footer {
+    background: #000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 130px;
+}
+
+.direitos {
+    color: #fff;
+    font-family: 'Inter';
+    font-size: 16px;
+}
+
+.footerSocial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50%;
+}
+
+.footerSocial img {
+    height: 50px;
+    margin-right: 20px;
+    transition: .25s ease;
+}
+
+.creditos {
+    color: #fff;
+    font-family: 'Inter';
+    font-size: 16px;
+}
+
+.footerSocial img:hover {
+    transform:translate(0, -10px);
+    box-shadow: 0px 17px 45px 0px rgba(0,0,0,.07);
+}
